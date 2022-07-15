@@ -1,0 +1,102 @@
+<html>
+    <head> 
+        <title>MY Web Page Title</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="functionality.js">
+        <script>
+            function validatename()
+            {
+                var regex=/^[a-zA-Z]+$/;
+                var name=document.getElementById("name").value;
+                try
+                {
+                    if(name=="") throw "empty";
+                    if(!name.match(regex)) throw "Must be a string";
+                }
+                catch(err)
+                { 
+                    document.getElementById("message").innerHTML =err;
+                    alert("Name :"+ err);
+                }
+            }
+            function validateEmail()
+            {
+                var email=document.getElementById("email").value;
+                var regex=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                try{
+                    if(email=="") throw "You sublitted Empty input for Email:";
+                    if(!email.match(regex)) throw "Invalid Email entered!.";
+                }
+                catch(err )
+                {
+                    alert(err);
+                }
+            }
+            function validateAbout()
+            {
+                var About_You=document.getElementById("About_You").value;
+                var regex=/^[a-zA-Z]+$/;
+                try
+                {
+                    if(About_You=="") throw "Emmty input for About Us Section";
+                }
+                catch(err)
+                {
+                    alert(err);
+                }
+            }
+            function final()
+            {
+                validatename();
+                validateEmail();
+                validateAbout();
+                /*if (validatename() == true && validateEmail() == true && idateAbout() == true)
+                {
+                    alert("You passed all the validation!");
+                    var myWindow = window.open("", "", "width=200,height=100");
+                }
+                else
+                {
+                    alert("Haha masla a giya..");
+                }*/
+            }
+        </script>
+    </head>
+    <body>
+        <p>This is a form to practise for Java Scipt.</p>
+        <div class="forms_data">
+            <div class="forms_questions">
+                <h1>Fill your interests</h1>
+                <form>
+                        <label >Name:</label><br>
+                        <input type="text" id="name"></input><br>
+                        <label>Email:</label><br>
+                        <input type="text" id="email"></input><br>
+                        <label>DOB</label><br>
+                        <input type="date"></input><br>
+                        <label>Select your interest:</label><br>
+                        <select name="interest" id="interests">
+                            <option value="Web development">Web Development</option>
+                            <option value="Quality Insurance">Quality Insurance</option>
+                            <option value="Mobile App development">Mobile App Development</option>
+                            <option value="Mern">Mern</option>
+                        </select><br>
+                        <input type="checkbox">
+                        <label for="individual"> Individual</label><br>
+            
+                        <input type="checkbox">
+                        <label for="organization">Organization</label><br>
+                        <label>
+                            About you:
+                        </label><br>
+                        <input id="About_You" type="text"></input>
+                    </form>
+                <button onclick="final()">Send Detail</button>
+            </div>
+        </div>
+     <div id="message" style="border-style: dotted;"> <h1>hi i am here.</h1></div>
+    </body>
+</html>
+
+
+

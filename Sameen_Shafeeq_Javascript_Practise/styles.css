@@ -1,0 +1,296 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+#logo_image img
+{
+    float: left;
+    margin-left: 10px;
+}
+.nav_elemnts
+{
+    float: right;
+    padding: 30px;
+}
+.nav_elemnts a{
+    color:black;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.banner_container
+{
+    position: reletive;
+    text-align: center;
+    color:black;
+}
+.banner_container img{
+    margin: 10px;
+    height: 300px;
+    width: 99%;
+}
+.banner_text{
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.global_sttings {
+    text-align: center;
+}
+.Anchor_styling a
+{
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: #a2e511;
+    color: black;
+    border-radius: 5px;
+    padding: 15px 45px; 
+    display:inline-block; 
+    margin-top: 20px;
+    margin-left:  20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+
+}
+.div1
+{
+    border-bottom:grey;
+}
+a:hover,div1{
+
+    background-color: darkgrey;
+}
+.heading-componets
+{
+    text-align:center;
+    margin:20px;
+}
+.services_section
+{
+    display: flex;
+}
+.services_section> div{
+    text-align: left;
+    width: 25%;
+    border:#a2e511;
+}
+.label_positioning{
+    margin-top:10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow:row wrap;
+}
+.services_section_paragraph
+{
+    margin-bottom: 20px;
+
+}
+.clear{
+    clear:both;
+}
+
+.About_us_section
+{
+  padding: 20px;
+  padding-bottom: 20px;
+
+}
+.About_us_section .About_us_textpart
+{
+    float :left;
+    padding: 20p;
+   /* display: inline-block;*/
+}
+.About_us_section .About_us_imagepart
+{
+    float :right;
+}
+.label_for_AboutUs
+{
+margin-top: 150px;
+margin-bottom: 20px;
+display: flex;
+justify-content: flex-start;
+flex-flow:row wrap;
+font-size: medium;
+}
+.about_us_heading
+{
+font-size: x-large;
+font-weight: 600;
+margin-bottom: 20px;
+justify-content: space-around;
+} 
+.about_us_paragraph
+{
+    color: grey;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+.About_us_textpart a{
+border:solid;
+border-width: thin;
+text-decoration: none;
+padding: 5px 10px;
+}
+.About_us_imagepart img
+{
+    margin-top: 20px;
+    width :500px;
+    height: 600px;
+}
+.My_table{
+    margin:30px;
+}
+.My_table h1{
+
+    margin-bottom: 5px;
+    margin-top:5px;
+}
+.My_table p{
+    margin: 5px;
+}
+.My_table table
+{
+
+width: 100%;
+text-align: left;
+
+}
+th{
+    background-color: #dddddd;
+    padding: 8px;
+
+}
+td,th{
+    padding: 8px;
+}
+
+.h hr{
+margin:15px;
+}
+.Questions
+{
+    text-align: center;
+    margin: 20px;
+}
+.Questions .text_Questions
+{
+    position: absolute;
+    top: 2070px;
+    left :30%
+}
+.Questions h1
+{
+    padding: 10px;
+    font-weight: 700;
+    font-size: xx-large;
+    text-transform:uppercase;
+}
+.Questions a{
+
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    padding: 15px 45px; 
+    display:inline-block; 
+    margin-top: 20px;
+    margin-left:  20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+
+
+}
+.Questions img{
+    width: 100%;
+}
+.forms_data
+{
+    margin: 20px;;
+}
+.forms_data label
+{
+   padding: 10px;
+   margin: 10px;
+}
+.forms_data form{
+   
+}
+input[type=text],select
+{
+margin: 10px;
+width: 700px;
+height: 25px;
+}
+input[type=date]
+{
+
+    margin: 10px;
+    width: 700px;
+    height: 25px;
+}
+#About_You
+{
+    height:300px;
+    width: 700px;
+
+}
+.forms_data button
+{
+    background-color: #a2e511;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    padding: 15px 45px; 
+    display:inline-block; 
+    margin-top: 50px;
+    margin-left:  20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.forms_data
+{
+    display: flex;
+}
+.forms_questions
+{
+    flex: 50%;
+}
+.Forms_Image_section
+{
+    flex: 50%;
+    background-color: rgb(229, 229, 229);
+}
+.My_Data
+{
+    border: #dddddd;
+    background-color: rgb(229, 229, 229);
+    padding-left: 25px;
+}
+.My_Data li{
+    padding-left: 10px;
+}
+.Footer
+{
+    padding: 10px;
+    background-color: rgb(229, 229, 229);
+}
+.Syapa_mukka
+{
+    height:50px;
+    background-color: black;
+    color: #dddddd;
+    text-align: center;
+    padding-top: 10px;
+}
