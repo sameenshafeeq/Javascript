@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="styles.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+   
+</head>
+<body>
+    <form class="my_form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email"><br>
+        <label for ="dateOfBirth">DOB:</label><br>
+        <input type="date" id="date"><br>
+        <label id="intersts">Select your Interests:</label><br>
+        <input type="checkbox" id="indevidual" name="individual" value="individual">
+        <label for="individual"> Individual</label>
+        <input type="checkbox" id="organization" name="organization" value="organization">
+        <label for="organization"> Organization</label><br>
+        <label>About you</label><br>
+        <input type="text" id="about"><br>
+    </form>
+    <input type="button"value="submit" onclick="send()" />
+    <script>
+        let name=document.querySelector("#name");
+        let email=document.querySelector("#email");
+        let about=document.querySelector("#about");
+        let x= document.getElementById("email").value;
+        function send() {
+        console.log(x);
+        console.log(name.value);
+        console.log(email.value);
+        console.log(about.value);
+        }
+    </script>
+</body>
+</html>
